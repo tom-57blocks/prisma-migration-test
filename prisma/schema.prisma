@@ -19,7 +19,8 @@ model Post {
   title     String
   content   String
   author    String?
-  favoriteColor   String?
+  favoriteColor String?
+  published Boolean  @default(false)
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 }
